@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@FeignClient(name = "taskClient", url = "http://task-service:8080")
+@FeignClient(name = "taskClient", url = "http://localhost:8080")
 public interface TaskClient {
 
     @GetMapping("/tasks")
